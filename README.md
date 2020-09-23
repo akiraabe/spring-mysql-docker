@@ -5,9 +5,17 @@ VSCodeで、Remote Containers - Reopen in Container によりコンテナを開�
 
 ## install extension
 Remote ContainerのVSCodeに必要なExtensionを導入する
-* Java extension
-* Spring boot develop extension
-* Lombok
+* Java extension pack
+* Spring boot extension pack
+* Lombok annotations support
+
+## PROXY配下で稼働させる場合の変更点
+⋆-sampleという名前のファイルをCOPYし、ファイル名から-sampleを除去</br>
+* src/demo/.m2/settings.xml-sample -> settings.xml
+* .env-sample -> .env
+  
+各々のファイルにPROXYサーバーのIPアドレス、PORTを指定する。
+
   
 ## Start Spring Boot App
 メインクラスを選択した状態で、</br>
